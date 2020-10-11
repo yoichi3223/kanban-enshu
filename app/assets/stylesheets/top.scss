@@ -31,7 +31,6 @@
           margin: 0;
         }
 
-        /* ==========ここから追加する========== */
         &_action {
 
           .fa-pen,
@@ -44,9 +43,50 @@
             margin-right: 10px;
           }
         }
+      }
+
+      .cardWrapper {
+        overflow-y: scroll;
+        max-height: 76vh;
+
+        /* ==========ここから追加する========== */
+        .cardDetail_link {
+          text-decoration: none;
+          color: #323232;
+        }
 
         /* ==========ここまで追加する========== */
 
+
+        .card {
+          margin-bottom: 10px;
+          padding: 10px;
+
+          &_title {
+            font-size: 17px;
+          }
+
+          &_detail {
+            display: none;
+
+            &.is-exist {
+              display: block;
+              color: #999;
+
+              &>i {
+                display: block;
+              }
+            }
+          }
+        }
+
+        .addCard {
+          color: #8c8c8c;
+
+          &_link {
+            color: #8c8c8c;
+          }
+        }
       }
     }
   }
